@@ -1,0 +1,1368 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Rahul Umbarkar & Associates - Company Secretarial Experts</title>
+  <meta name="description" content="Company registration, compliance, NCLT matters, trademark services and more.">
+  <meta name="keywords" content="Company Secretary, Private Limited, LLP, Trademark, NCLT, MCA Compliance, OPC, Startup India">
+
+<!-- Favicons -->
+<link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+<link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+<!-- Main CSS File -->
+<link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      
+          <a href="{% url 'home' %}" class="logo d-flex align-items-center me-auto">
+            <img src="{% static 'assets/img/logo.png' %}" alt="Rahul Umbarkar Logo">
+            <h1 class="sitename">Rahul Umbarkar & Associates</h1>
+          </a>
+      
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="#hero" class="active">Home<br></a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#team">Our Team</a></li>
+              <!-- <li>
+                <a href="">Insights & Blog</a>
+            </li> -->
+      
+              <li class="listing-dropdown">
+                <a href="#"><span>Client Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Company Secretary Services</a></li>
+                  <li><a href="#">Tax Advisory</a></li>
+                  <li><a href="#">Corporate Compliance</a></li>
+                  <li><a href="#">Business Consulting</a></li>
+                  <li><a href="#">Mergers & Acquisitions</a></li>
+                </ul>
+              </li>
+      
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+      
+          <a class="btn-getstarted flex-md-shrink-0" href="#about">Get Started</a>
+      
+        </div>
+      </header>
+  <main class="main">
+
+<!-- Hero Section -->
+<section id="hero" class="hero section">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Your Compliance Partner for Corporate Growth</h1>
+          <p data-aos="fade-up" data-aos-delay="100">
+            We specialize in company formation, trademark registration, MCA filings, and NCLT legal matters with precision and professionalism.
+          </p>
+          <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
+            <a href="#about" class="btn-get-started">Explore Services <i class="bi bi-arrow-right"></i></a>
+            <a href="#contact" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0">
+              <i class="bi bi-play-circle"></i><span>Contact Now</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img src="{% static 'assets/img/hero-img.png' %}" class="img-fluid animated" alt="Corporate Compliance Illustration">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- About Section -->
+<section id="about" class="about section">
+    <div class="container" data-aos="fade-up">
+      <div class="row gx-0">
+  
+        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="content">
+            <h3>Who We Are</h3>
+            <h2>Trusted Company Secretaries Empowering Corporate Growth</h2>
+            <p>
+              At Rahul Umbarkar & Associates, we are a Mumbai-based firm of qualified Company Secretaries dedicated to simplifying business compliance. From registering your company to managing regulatory filings, we offer end-to-end solutions tailored to your business needs.
+            </p>
+            <p>
+              Our expertise spans Company Incorporation (Pvt Ltd, LLP, OPC), ROC Filings, Trademark Registrations, FEMA/RBI compliance, and NCLT litigation support. With us, your compliance is not just a necessity — it’s a strategic advantage.
+            </p>
+            <div class="text-center text-lg-start">
+              <a href="#services" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Our Services</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+          <img src="{% static 'assets/img/Company-Secretarial.jpg' %}" class="img-fluid" alt="Company Secretarial Services Image">
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- /About Section -->
+
+
+<!-- Values Section -->
+<section id="values" class="values section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Our Values</h2>
+      <p>Guiding Principles That Define Us</p>
+    </div><!-- End Section Title -->
+  
+    <div class="container">
+      <div class="row gy-4">
+  
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card">
+            <img src="{% static 'assets/img/values-1.png' %}" class="img-fluid" alt="Integrity and Ethics">
+            <h3>Integrity & Ethics</h3>
+            <p>We adhere to the highest standards of professional ethics, ensuring transparency and honesty in every aspect of our work.</p>
+          </div>
+        </div><!-- End Card Item -->
+  
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card">
+            <img src="{% static 'assets/img/values-2.png' %}" class="img-fluid" alt="Client-Centric Approach">
+            <h3>Client-Centric Approach</h3>
+            <p>Our clients come first. We tailor our solutions to meet their unique business compliance needs with precision and dedication.</p>
+          </div>
+        </div><!-- End Card Item -->
+  
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card">
+            <img src="{% static 'assets/img/values-3.png' %}" class="img-fluid" alt="Excellence in Compliance">
+            <h3>Excellence in Compliance</h3>
+            <p>We are committed to providing accurate, up-to-date compliance services to support sustainable business growth and legal protection.</p>
+          </div>
+        </div><!-- End Card Item -->
+  
+      </div>
+    </div>
+  
+  </section>
+  <!-- /Values Section -->
+<!-- Stats Section -->
+<section id="stats" class="stats section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item d-flex align-items-center w-100 h-100">
+            <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Satisfied Clients</p>
+            </div>
+          </div>
+        </div><!-- End Stats Item -->
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item d-flex align-items-center w-100 h-100">
+            <i class="bi bi-briefcase color-orange flex-shrink-0"></i>
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Company Formations</p>
+            </div>
+          </div>
+        </div><!-- End Stats Item -->
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item d-flex align-items-center w-100 h-100">
+            <i class="bi bi-file-earmark-check color-green flex-shrink-0"></i>
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Compliance Filings</p>
+            </div>
+          </div>
+        </div><!-- End Stats Item -->
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item d-flex align-items-center w-100 h-100">
+            <i class="bi bi-people color-pink flex-shrink-0"></i>
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Experienced Team Members</p>
+            </div>
+          </div>
+        </div><!-- End Stats Item -->
+  
+      </div>
+    </div>
+  
+  </section>
+  <!-- /Stats Section -->
+   
+  
+<!-- Features Section -->
+<section id="features" class="features section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Features</h2>
+      <p>Our Advanced Features</p>
+    </div><!-- End Section Title -->
+  
+    <div class="container">
+      <div class="row gy-5">
+  
+        <div class="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
+          <img src="{% static 'assets/img/features.png' %}" class="img-fluid" alt="Features Image">
+        </div>
+  
+        <div class="col-xl-6 d-flex">
+          <div class="row align-self-center gy-4">
+  
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Company Incorporation</h3>
+              </div>
+            </div>
+  
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>ROC Filing & Compliance</h3>
+              </div>
+            </div>
+  
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>LLP & OPC Services</h3>
+              </div>
+            </div>
+  
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Annual Returns & Audits</h3>
+              </div>
+            </div>
+  
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>NCLT, DIN & DSC Filing</h3>
+              </div>
+            </div>
+  
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Legal Drafting & Certification</h3>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+  </section><!-- /Features Section -->
+
+
+<!-- Alt Features Section -->
+<section id="alt-features" class="alt-features section">
+
+    <div class="container">
+  
+      <div class="row gy-5">
+  
+        <div class="col-xl-7 d-flex order-2 order-xl-1" data-aos="fade-up" data-aos-delay="200">
+  
+          <div class="row align-self-center gy-5">
+  
+            <div class="col-md-6 icon-box">
+              <i class="bi bi-award"></i>
+              <div>
+                <h4>Trusted Expertise</h4>
+                <p>Years of professional experience in corporate legal matters, governance, and compliance.</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 icon-box">
+              <i class="bi bi-card-checklist"></i>
+              <div>
+                <h4>100% Statutory Compliance</h4>
+                <p>Ensuring accurate, timely filings and full adherence to ROC and MCA regulations.</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 icon-box">
+              <i class="bi bi-clock-history"></i>
+              <div>
+                <h4>Quick Turnaround</h4>
+                <p>Fast processing of company registrations, filings, and certifications — always on schedule.</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 icon-box">
+              <i class="bi bi-shield-check"></i>
+              <div>
+                <h4>Secure & Confidential</h4>
+                <p>All client data is handled with strict confidentiality and industry-standard security practices.</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 icon-box">
+              <i class="bi bi-people"></i>
+              <div>
+                <h4>Client-Centric Approach</h4>
+                <p>Personalized attention and expert consultation tailored to your business goals.</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 icon-box">
+              <i class="bi bi-patch-check"></i>
+              <div>
+                <h4>One-Stop Compliance Partner</h4>
+                <p>From incorporation to legal drafting, get all CS services under one roof.</p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+        <div class="col-xl-5 d-flex align-items-center order-1 order-xl-2" data-aos="fade-up" data-aos-delay="100">
+          <img src="{% static 'assets/img/alt-features.png' %}" class="img-fluid" alt="Company Secretary Features">
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </section><!-- /Alt Features Section -->
+
+  <!-- Services Section -->
+<section id="services" class="services section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Services</h2>
+      <p>Explore Our Professional Company Secretary Services</p>
+    </div><!-- End Section Title -->
+  
+    <div class="container">
+      <div class="row gy-4">
+  
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item item-cyan position-relative">
+            <i class="bi bi-buildings icon"></i>
+            <h3>Company Incorporation</h3>
+            <p>Private Limited, LLP, OPC, and Section 8 company registration with all ROC formalities handled seamlessly.</p>
+            <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item item-orange position-relative">
+            <i class="bi bi-journal-text icon"></i>
+            <h3>ROC Compliance Filings</h3>
+            <p>Timely filing of Annual Returns, DIR-3 KYC, MGT-7, AOC-4, and all MCA compliance documentation.</p>
+            <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item item-teal position-relative">
+            <i class="bi bi-briefcase-check icon"></i>
+            <h3>Business Licenses & Approvals</h3>
+            <p>Assistance with FSSAI, Shop Act, MSME, IEC, GST registration and other statutory licenses required to operate legally.</p>
+            <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-item item-red position-relative">
+            <i class="bi bi-pencil-square icon"></i>
+            <h3>Legal Drafting</h3>
+            <p>Preparation of Board Resolutions, Shareholder Agreements, MOA/AOA amendments, and other legal documents.</p>
+            <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-item item-indigo position-relative">
+            <i class="bi bi-cash-coin icon"></i>
+            <h3>Startup Advisory</h3>
+            <p>Expert guidance for startups including business structuring, cap table setup, and due diligence assistance.</p>
+            <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+          <div class="service-item item-pink position-relative">
+            <i class="bi bi-file-earmark-text icon"></i>
+            <h3>Event-Based Compliances</h3>
+            <p>Handling changes in directors, increase in authorized capital, share transfers, and other corporate actions.</p>
+            <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+  </section><!-- /Services Section -->
+  
+<!-- Pricing Section -->
+<section id="pricing" class="pricing section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Pricing</h2>
+      <p>Transparent & Affordable Company Secretary Fees</p>
+    </div><!-- End Section Title -->
+  
+    <div class="container">
+      <div class="row gy-4">
+  
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="pricing-tem">
+            <h3 style="color: #20c997;">Company Registration</h3>
+            <div class="price"><sup>₹</sup>6,999<span> onwards</span></div>
+            <div class="icon">
+              <i class="bi bi-building" style="color: #20c997;"></i>
+            </div>
+            <ul>
+              <li>Private Ltd/LLP/OPC</li>
+              <li>DIN, DSC, PAN, TAN</li>
+              <li>MOA & AOA Drafting</li>
+              <li class="na">GST Registration</li>
+              <li class="na">Post-Incorporation Filings</li>
+            </ul>
+            <a href="#" class="btn-buy">Get Started</a>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pricing-tem">
+            <span class="featured">Popular</span>
+            <h3 style="color: #0dcaf0;">Annual ROC Filing</h3>
+            <div class="price"><sup>₹</sup>3,499<span> / year</span></div>
+            <div class="icon">
+              <i class="bi bi-journal-check" style="color: #0dcaf0;"></i>
+            </div>
+            <ul>
+              <li>MGT-7 & AOC-4</li>
+              <li>Director KYC (DIR-3)</li>
+              <li>Board Meeting Records</li>
+              <li>Consultation & Support</li>
+              <li class="na">Physical Visit</li>
+            </ul>
+            <a href="#" class="btn-buy">File Now</a>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="pricing-tem">
+            <h3 style="color: #fd7e14;">Event-Based Filing</h3>
+            <div class="price"><sup>₹</sup>1,999<span> onwards</span></div>
+            <div class="icon">
+              <i class="bi bi-pencil-square" style="color: #fd7e14;"></i>
+            </div>
+            <ul>
+              <li>Change in Directors</li>
+              <li>Increase Capital</li>
+              <li>Share Transfer</li>
+              <li>MOA/AOA Amendment</li>
+              <li>Other ROC Forms</li>
+            </ul>
+            <a href="#" class="btn-buy">Request Service</a>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+          <div class="pricing-tem">
+            <h3 style="color: #0d6efd;">Startup Combo</h3>
+            <div class="price"><sup>₹</sup>12,499<span> all inclusive</span></div>
+            <div class="icon">
+              <i class="bi bi-stars" style="color: #0d6efd;"></i>
+            </div>
+            <ul>
+              <li>Company Registration</li>
+              <li>GST + MSME + IEC</li>
+              <li>1 Year ROC Compliance</li>
+              <li>Business Consultancy</li>
+              <li>Email & Document Templates</li>
+            </ul>
+            <a href="#" class="btn-buy">Grab Deal</a>
+          </div>
+        </div>
+  
+      </div><!-- End pricing row -->
+    </div>
+  
+  </section><!-- /Pricing Section -->
+  
+<!-- Faq Section -->
+<section id="faq" class="faq section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>F.A.Q</h2>
+    <p>Frequently Asked Questions</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="faq-container">
+
+          <div class="faq-item faq-active">
+            <h3>What is the process to register a private limited company?</h3>
+            <div class="faq-content">
+              <p>To register a private limited company, we handle everything from DSC, DIN, Name Approval, MOA/AOA drafting to MCA filing. The process usually takes 5–7 working days.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+          <div class="faq-item">
+            <h3>What are the annual compliance requirements for a Pvt Ltd company?</h3>
+            <div class="faq-content">
+              <p>Annual compliances include filing MGT-7 (Annual Return), AOC-4 (Financials), Director KYC, maintaining board meeting minutes, and statutory registers.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+          <div class="faq-item">
+            <h3>Do you offer services for startups and MSMEs?</h3>
+            <div class="faq-content">
+              <p>Yes, we provide end-to-end support including company registration, GST, MSME, IEC, brand name registration, and regular compliance advisory for startups.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+        </div>
+      </div><!-- End Faq Column -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="faq-container">
+
+          <div class="faq-item">
+            <h3>What happens if ROC filing is not done on time?</h3>
+            <div class="faq-content">
+              <p>Delayed filing attracts penalties ranging from ₹100/day to heavy fines depending on the form. It can also lead to disqualification of directors. Timely compliance is crucial.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+          <div class="faq-item">
+            <h3>Can I convert my sole proprietorship to a private limited company?</h3>
+            <div class="faq-content">
+              <p>Yes, conversion is possible. We can help with forming a new company and transferring business assets, GST, and bank accounts accordingly.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+          <div class="faq-item">
+            <h3>Do you provide advisory or legal drafting services?</h3>
+            <div class="faq-content">
+              <p>Yes, we assist with drafting board resolutions, shareholder agreements, MOUs, compliance reports, and offer virtual CS consultations for business decisions.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+        </div>
+      </div><!-- End Faq Column -->
+
+    </div>
+  </div>
+
+</section><!-- /Faq Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Check our latest work</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Product</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-books">Books</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <p>What Our Clients Say About Us</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 40
+            },
+            "1200": {
+              "slidesPerView": 3,
+              "spaceBetween": 1
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              Rahul and his team have been instrumental in getting our company registered and fully compliant. Their attention to detail and proactive approach saved us time and money.
+            </p>
+            <div class="profile mt-auto">
+              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+              <h3>Amit Shah</h3>
+              <h4>Startup Founder</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              We’ve been availing their compliance services for over a year. Their guidance has helped us avoid penalties and maintain a good standing with the ROC.
+            </p>
+            <div class="profile mt-auto">
+              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+              <h3>Ritika Jain</h3>
+              <h4>Director, Jain Textiles Pvt. Ltd.</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              I reached out for help with LLP annual filings and got amazing support. Everything was done on time with complete transparency.
+            </p>
+            <div class="profile mt-auto">
+              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+              <h3>Neeraj Deshmukh</h3>
+              <h4>Freelance Consultant</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              They made the process of obtaining DIN, DSC, and incorporating our company smooth and stress-free. Highly recommended for entrepreneurs!
+            </p>
+            <div class="profile mt-auto">
+              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+              <h3>Priya Mehta</h3>
+              <h4>Entrepreneur</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              Whether it’s ROC compliance or advisory on shareholding patterns, their team is always available and extremely knowledgeable. A pleasure to work with!
+            </p>
+            <div class="profile mt-auto">
+              <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+              <h3>Rajiv Iyer</h3>
+              <h4>Managing Partner, FinEdge LLP</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- /Testimonials Section -->
+<!-- Team Section -->
+<section id="team" class="team section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Meet Our Team</h2>
+    <p>Our expert team dedicated to serving your compliance and advisory needs</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Rahul Umbarkar</h4>
+            <span>Founder & CEO</span>
+            <p>With years of expertise in corporate law and compliance, Rahul leads our firm, providing clients with exceptional guidance on legal and financial matters.</p>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Ritika Jain</h4>
+            <span>Senior Associate</span>
+            <p>Ritika brings over 8 years of experience in company secretarial services, ensuring our clients maintain legal and financial compliance seamlessly.</p>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Arvind Kumar</h4>
+            <span>Compliance Officer</span>
+            <p>Arvind is dedicated to ensuring that all corporate entities stay compliant with local and international laws, focusing on seamless legal processes.</p>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Shalini Gupta</h4>
+            <span>Legal Advisor</span>
+            <p>Shalini specializes in advising clients on complex legal matters, particularly in the areas of corporate governance, mergers, and acquisitions.</p>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Team Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Clients</h2>
+        <p>We work with best clients<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+<!-- Recent Posts Section -->
+<section id="recent-posts" class="recent-posts section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Recent Articles</h2>
+    <p>Stay updated with the latest insights from the world of corporate law and compliance.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-5">
+
+      <div class="col-xl-4 col-md-6">
+        <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="post-img position-relative overflow-hidden">
+            <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
+            <span class="post-date">April 08</span>
+          </div>
+
+          <div class="post-content d-flex flex-column">
+
+            <h3 class="post-title">New Compliance Requirements for Startups in India</h3>
+
+            <div class="meta d-flex align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-person"></i> <span class="ps-2">Rahul Umbarkar</span>
+              </div>
+              <span class="px-3 text-black-50">/</span>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-folder2"></i> <span class="ps-2">Corporate Law</span>
+              </div>
+            </div>
+
+            <hr>
+
+            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+
+          </div>
+
+        </div>
+      </div><!-- End post item -->
+
+      <div class="col-xl-4 col-md-6">
+        <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="post-img position-relative overflow-hidden">
+            <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
+            <span class="post-date">March 24</span>
+          </div>
+
+          <div class="post-content d-flex flex-column">
+
+            <h3 class="post-title">How to Manage Corporate Governance During Mergers</h3>
+
+            <div class="meta d-flex align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-person"></i> <span class="ps-2">Ritika Jain</span>
+              </div>
+              <span class="px-3 text-black-50">/</span>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-folder2"></i> <span class="ps-2">Business Advisory</span>
+              </div>
+            </div>
+
+            <hr>
+
+            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+
+          </div>
+
+        </div>
+      </div><!-- End post item -->
+
+      <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="post-item position-relative h-100">
+
+          <div class="post-img position-relative overflow-hidden">
+            <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
+            <span class="post-date">February 18</span>
+          </div>
+
+          <div class="post-content d-flex flex-column">
+
+            <h3 class="post-title">Understanding the Role of Company Secretaries in Corporate Finance</h3>
+
+            <div class="meta d-flex align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-person"></i> <span class="ps-2">Arvind Kumar</span>
+              </div>
+              <span class="px-3 text-black-50">/</span>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-folder2"></i> <span class="ps-2">Corporate Governance</span>
+              </div>
+            </div>
+
+            <hr>
+
+            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+
+          </div>
+
+        </div>
+      </div><!-- End post item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Recent Posts Section -->
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you. Reach out for inquiries or consultations.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="info-item" data-aos="fade" data-aos-delay="200">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Our Office</h3>
+              <p>456 Corporate Tower</p>
+              <p>Andheri, Mumbai, India</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item" data-aos="fade" data-aos-delay="300">
+              <i class="bi bi-telephone"></i>
+              <h3>Call Us</h3>
+              <p>+91 9876 543210</p>
+              <p>+91 9988 112233</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item" data-aos="fade" data-aos-delay="400">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>info@rahulumarkar.com</p>
+              <p>contact@rahulumarkar.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item" data-aos="fade" data-aos-delay="500">
+              <i class="bi bi-clock"></i>
+              <h3>Business Hours</h3>
+              <p>Monday - Friday</p>
+              <p>9:00 AM - 6:00 PM</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-6">
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form>
+      </div><!-- End Contact Form -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our services and updates.</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form">
+                <input type="email" name="email" placeholder="Enter your email">
+                <input type="submit" value="Subscribe">
+              </div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Rahul Umbarkar & Associates</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>456 Corporate Tower</p>
+            <p>Andheri, Mumbai, India</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 9876 543210</span></p>
+            <p><strong>Email:</strong> <span>info@rahulumarkar.com</span></p>
+          </div>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About Us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Our Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Company Secretary Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Corporate Taxation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Corporate Compliance</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Business Consulting</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Stay updated with the latest news and insights from our firm.</p>
+          <div class="social-links d-flex">
+            <a href="https://twitter.com/rahulumarkar"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://facebook.com/rahulumarkar"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/rahulumarkar"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com/company/rahulumarkar"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Rahul Umbarkar & Associates</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  
+  </footer>
+  
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!-- Vendor JS Files -->
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+<script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+<script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+<script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+<!-- Main JS File -->
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
