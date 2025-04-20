@@ -11,9 +11,9 @@ GIT_REPO_URL="https://github.com/samarth1011/cs_portal.git"
 PROJECT_MAIN_DIR_NAME="CS"
 
 # Clone repository
-git clone "$GIT_REPO_URL" "/home/ubuntu/$PROJECT_MAIN_DIR_NAME"
+git clone "$GIT_REPO_URL" "/home/ec2-user/$PROJECT_MAIN_DIR_NAME"
 
-cd "/home/ubuntu/$PROJECT_MAIN_DIR_NAME"
+cd "/home/ec2-user/$PROJECT_MAIN_DIR_NAME"
 
 # Make all .sh files executable
 chmod +x scripts/*.sh
