@@ -1,31 +1,33 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -e
 
 PROJECT_MAIN_DIR_NAME="CS"
 
-# Validate variables
+# Validate variable
 if [ -z "$PROJECT_MAIN_DIR_NAME" ]; then
-    echo "Error: PROJECT_MAIN_DIR_NAME is not set. Please set it to your project directory name." >&2
+    echo "Error: PROJECT_MAIN_DIR_NAME is not set." >&2
     exit 1
 fi
 
-# Change ownership to ubuntu user
-sudo chown -R ubuntu:ubuntu "/home/ec2-user/$PROJECT_MAIN_DIR_NAME"
+PROJECT_DIR="/home/ec2-user/$PROJECT_MAIN_DIR_NAME"
 
-# Change directory to the project main directory
-cd "/home/ec2-user/$PROJECT_MAIN_DIR_NAME"
+# Change ownership to ec2-user (Amazon Linux typically uses ec2-user, not ubuntu)
+sudo chown -R ec2-user:ec2-user "$PROJECT_DIR"
+
+# Change to project directory
+cd "$PROJECT_DIR"
 
 # Activate virtual environment
 echo "Activating virtual environment..."
-source "/home/ec2-user/$PROJECT_MAIN_DIR_NAME/venv/bin/activate"
+source "$PROJECT_DIR/venv/bin/activate"
 
-# Run collectstatic command
-echo "Running collectstatic command..."
+# Run Django collectstatic
+echo "Running collectstatic..."
 python manage.py collectstatic --noinput
 
-# Restart Gunicorn and Nginx services
+# Restart Gunicorn and Nginx
 echo "Restarting Gunicorn and Nginx services..."
-sudo service gunicorn restart
-sudo service nginx restart
+sudo systemctl restart gunicorn
+sudo systemctl restart nginx
 
-echo "Application started successfully."
+echo "✅ Application started successfully."

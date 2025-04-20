@@ -1,11 +1,15 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-sudo apt update
-# Install Python3 pip
-sudo apt install -y python3-pip
+# Update packages
+sudo yum update -y
+
+# Install Python3 and pip
+sudo yum install -y python3 python3-pip
 
 # Install Nginx
-sudo apt install -y nginx
+sudo amazon-linux-extras enable nginx1
+sudo yum clean metadata
+sudo yum install -y nginx
 
-# Install Virtualenv
-sudo apt install -y virtualenv
+# Install virtualenv
+sudo pip3 install virtualenv

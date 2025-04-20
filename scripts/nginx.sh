@@ -1,25 +1,24 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-# Replace {YOUR_PROJECT_MAIN_DIR_NAME} with your actual project directory name
+# Replace with your actual project directory name
 PROJECT_MAIN_DIR_NAME="CS"
 
-# Replace {FOLDER_NAME_WHERE_SETTINGS_FILE_EXISTS} with the folder name where your nginx configuration file exists
+# Replace with the folder name where your nginx config is located (typically your Django app folder)
 FOLDER_NAME_WHERE_SETTINGS_FILE_EXISTS="core"
 
-# Reload systemd daemon
+# Reload systemd daemon (if needed for other services like gunicorn)
 sudo systemctl daemon-reload
 
-# Remove default Nginx site if exists
-sudo rm -f /etc/nginx/sites-enabled/default
+# Optional: Remove default Nginx conf if modifying default server block
+# Amazon Linux uses /etc/nginx/nginx.conf directly or /etc/nginx/conf.d/
+# Not /sites-enabled or /sites-available by default
 
-# Copy Nginx configuration file
-sudo cp "/home/ec2-user/$PROJECT_MAIN_DIR_NAME/nginx/nginx.conf" "/etc/nginx/sites-available/$FOLDER_NAME_WHERE_SETTINGS_FILE_EXISTS"
+# Copy your Nginx config to conf.d (which is used in Amazon Linux)
+sudo cp "/home/ec2-user/$PROJECT_MAIN_DIR_NAME/nginx/nginx.conf" "/etc/nginx/conf.d/$FOLDER_NAME_WHERE_SETTINGS_FILE_EXISTS.conf"
 
-# Create symbolic link to enable Nginx site
-sudo ln -s "/etc/nginx/sites-available/$FOLDER_NAME_WHERE_SETTINGS_FILE_EXISTS" "/etc/nginx/sites-enabled/"
+# Make sure nginx user exists (Amazon Linux usually uses 'nginx' user, not 'www-data')
+# Optional: Add ec2-user to nginx group if needed
+sudo usermod -a -G nginx ec2-user
 
-# Add www-data user to ubuntu group
-sudo gpasswd -a www-data ubuntu
-
-# Restart Nginx service
+# Restart Nginx to apply changes
 sudo systemctl restart nginx
