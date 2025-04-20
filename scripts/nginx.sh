@@ -4,7 +4,7 @@
 PROJECT_MAIN_DIR_NAME="CS"
 
 # Replace with the folder name where your nginx config is located (typically your Django app folder)
-FOLDER_NAME_WHERE_SETTINGS_FILE_EXISTS="core"
+FOLDER_NAME_WHERE_SETTINGS_FILE_EXISTS="cs_portal"
 
 # Reload systemd daemon (if needed for other services like gunicorn)
 sudo systemctl daemon-reload
