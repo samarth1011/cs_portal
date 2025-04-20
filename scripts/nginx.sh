@@ -1,24 +1,36 @@
 #!/bin/bash
 
-# Replace with your actual project directory name
-PROJECT_MAIN_DIR_NAME="CS"
+set -e
 
-# Replace with the folder name where your nginx config is located (typically your Django app folder)
+PROJECT_MAIN_DIR_NAME="CS"
 FOLDER_NAME_WHERE_SETTINGS_FILE_EXISTS="cs_portal"
 
-# Reload systemd daemon (if needed for other services like gunicorn)
+# Reload systemd daemon
 sudo systemctl daemon-reload
 
-# Optional: Remove default Nginx conf if modifying default server block
-# Amazon Linux uses /etc/nginx/nginx.conf directly or /etc/nginx/conf.d/
-# Not /sites-enabled or /sites-available by default
-
-# Copy your Nginx config to conf.d (which is used in Amazon Linux)
+# Copy Nginx config to conf.d
 sudo cp "/home/ec2-user/$PROJECT_MAIN_DIR_NAME/nginx/nginx.conf" "/etc/nginx/conf.d/$FOLDER_NAME_WHERE_SETTINGS_FILE_EXISTS.conf"
 
-# Make sure nginx user exists (Amazon Linux usually uses 'nginx' user, not 'www-data')
-# Optional: Add ec2-user to nginx group if needed
+# Create proxy_params file if missing (Amazon Linux doesn't have it by default)
+if [ ! -f /etc/nginx/proxy_params ]; then
+    echo "Creating missing /etc/nginx/proxy_params..."
+    sudo tee /etc/nginx/proxy_params > /dev/null <<EOF
+proxy_set_header Host \$host;
+proxy_set_header X-Real-IP \$remote_addr;
+proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+proxy_set_header X-Forwarded-Proto \$scheme;
+EOF
+fi
+
+# Optional: Add ec2-user to nginx group
 sudo usermod -a -G nginx ec2-user
 
-# Restart Nginx to apply changes
+# Test nginx config before restarting
+echo "Testing nginx config..."
+sudo nginx -t
+
+# Restart nginx
+echo "Restarting nginx..."
 sudo systemctl restart nginx
+
+echo "✅ Nginx setup complete."
