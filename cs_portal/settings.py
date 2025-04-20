@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rahulumbarkar',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -99,6 +100,16 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'samarth@kapturise.com'
+EMAIL_HOST_PASSWORD = 'Pccoe@123'
+EMAIL_USE_TLS = True
+
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+CONTACT_RECEIVER_EMAIL = 'samarth.mailme@gmail.com'
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
@@ -108,6 +119,9 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 USE_TZ = True
 
@@ -119,6 +133,12 @@ USE_TZ = True
 # Static files
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
+
+# CKEditor Uploads
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
+# Optional: allow image uploads
+CKEDITOR_IMAGE_BACKEND = "pillow"
 
 # Templates
 TEMPLATES[0]['DIRS'] = [BASE_DIR / 'rahulumbarkar' / 'templates']
