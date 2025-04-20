@@ -5,12 +5,12 @@ After=network.target
 
 [Service]
 User=ec2-user
-Group=www-data
+Group=nginx
 WorkingDirectory=/home/ec2-user/CS
 ExecStart=/home/ec2-user/CS/venv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
-          core.wsgi:application
+          cs_portal.wsgi:application
 [Install]
 WantedBy=multi-user.target
