@@ -2,7 +2,7 @@
 * Template Name: FlexStart
 * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
 * Updated: Nov 01 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
+* Author: Green Reach Solutions.com
 * License: https://bootstrapmade.com/license/
 */
 
