@@ -122,14 +122,14 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
+MEDIA_URL = '/media/'
 
-MEDIA_URL = '/cs/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 USE_TZ = True
 
 # Static files
-STATIC_URL = '/cs/static/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
