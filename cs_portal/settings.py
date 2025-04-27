@@ -26,8 +26,10 @@ SECRET_KEY = 'django-insecure-zn#6=$014&yu7kanf^+=a5-b)3k1mg^yqm*b)#=y$!#^m=k*4v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = ['*']
 
+FORCE_SCRIPT_NAME = '/cs'
 
 # Application definition
 
@@ -121,13 +123,13 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-MEDIA_URL = '/media/'
+MEDIA_URL = '/cs/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 USE_TZ = True
 
 # Static files
-STATIC_URL = '/static/'
+STATIC_URL = '/cs/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
