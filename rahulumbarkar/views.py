@@ -1,8 +1,15 @@
+
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.core.mail import send_mail, BadHeaderError
 from .models import BlogPost
 from django.conf import settings
+
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from django.core.validators import validate_email
+from django.core.exceptions import ValidationError
+from .models import NewsletterSubscriber
 
 def home(request):
     posts = BlogPost.objects.order_by('-created_at')[:6]  # Show latest 6 blogs
@@ -37,6 +44,9 @@ def other_services(request):
     return render(request, 'rahulumbarkar/other_services.html')
 
 
+def terms(request):
+    return render(request, 'rahulumbarkar/terms.html')
+
 def blog_detail(request, slug):
     post = get_object_or_404(BlogPost, slug=slug)
     return render(request, 'rahulumbarkar/blog-details.html', {'post': post})
@@ -61,5 +71,20 @@ def contact_view(request):
         except BadHeaderError:
             return HttpResponse("Invalid header found.")
     return render(request, "index.html")
+
+@csrf_exempt
+def subscribe_newsletter(request):
+    if request.method == "POST":
+        email = request.POST.get("email", "").strip()
+        try:
+            validate_email(email)
+            obj, created = NewsletterSubscriber.objects.get_or_create(email=email)
+            if created:
+                return JsonResponse({"status": "success", "message": "Subscribed successfully!"})
+            else:
+                return JsonResponse({"status": "exists", "message": "Already subscribed."})
+        except ValidationError:
+            return JsonResponse({"status": "error", "message": "Invalid email."})
+    return JsonResponse({"status": "error", "message": "Invalid request."})
 
 

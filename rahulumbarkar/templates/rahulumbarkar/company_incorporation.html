@@ -37,6 +37,28 @@
   ======================================================== -->
 </head>
 
+<style>
+  .whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  z-index: 1000;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+  color: white;
+}
+</style>
 <body class="service-details-page">
     <header id="header" class="header d-flex align-items-center fixed-top">
       <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -82,6 +104,9 @@
       </div>
       </header>
 
+      <a href="https://wa.me/919152903174" class="whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+      </a>
   <main class="main">
 
 <!-- Page Title -->
