@@ -1042,40 +1042,30 @@
       </div>
 
       <div class="col-lg-6">
-        <form method="post" action="{% url 'contact' %}" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-          {% csrf_token %}         
-           <div class="row gy-4">
-
+        <form action="https://formsubmit.co/samarth.mailme@gmail.com" method="POST">
+          <!-- Optional config -->
+          <input type="hidden" name="_next" value="https://csrrumbarkar.com/thank-you">
+          <input type="hidden" name="_captcha" value="false">
+        
+          <div class="row gy-4">
             <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
             </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            <div class="col-md-6">
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
             </div>
-
             <div class="col-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+              <input type="text" name="subject" class="form-control" placeholder="Subject" required>
             </div>
-
             <div class="col-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+              <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
             </div>
-
             <div class="col-12 text-center">
-              {% if success %}
-  <div class="alert alert-success">Your message has been sent. Thank you!</div>
-{% endif %}
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-
-              <button type="submit">Send Message</button>
+              <button type="submit" class="btn btn-primary">Send Message</button>
             </div>
-
           </div>
         </form>
+        
       </div><!-- End Contact Form -->
 
     </div>
